@@ -6,7 +6,7 @@ class Property {
     TYPES = {
         // 本局
         AGE: "AGE", // 年龄 age AGE
-        CHR: "CHR", // 颜值 charm CHR
+        CHR: "CHR", // 运气 charm CHR
         INT: "INT", // 智力 intelligence INT
         STR: "STR", // 体质 strength STR
         MNY: "MNY", // 家境 money MNY
@@ -19,8 +19,8 @@ class Property {
         // Auto calc
         LAGE: "LAGE", // 最低年龄 Low Age
         HAGE: "HAGE", // 最高年龄 High Age
-        LCHR: "LCHR", // 最低颜值 Low Charm
-        HCHR: "HCHR", // 最高颜值 High Charm
+        LCHR: "LCHR", // 最低运气 Low Charm
+        HCHR: "HCHR", // 最高运气 High Charm
         LINT: "LINT", // 最低智力 Low Intelligence
         HINT: "HINT", // 最高智力 High Intelligence
         LSTR: "LSTR", // 最低体质 Low Strength

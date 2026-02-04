@@ -32,13 +32,13 @@ globalThis.$$off = (tag, fn) => {
 class App {
     constructor() {
         this.#life.config({
-            defaultPropertyPoints: 20, // default number of points for a property
-            talentSelectLimit: 3, // max number of talents that can be selected
-            propertyAllocateLimit: [0, 10], // scoop of properties that can be allocated,
+            defaultPropertyPoints: 25, // default number of points for a property
+            talentSelectLimit: 5, // max number of talents that can be selected
+            propertyAllocateLimit: [0, 20], // scoop of properties that can be allocated,
             defaultPropertys: { SPR: 5 }, // default properties
             talentConfig: {
                 // config for talent
-                talentPullCount: 10, // number of talents to pull from the talent pool
+                talentPullCount: 20, // number of talents to pull from the talent pool
                 talentRate: { 1: 100, 2: 10, 3: 1, total: 1000 }, // rate of talent pull
                 additions: {
                     TMS: [
@@ -410,7 +410,7 @@ class App {
 
                 <TAG>   表示要分配的属性标签
                         可选有
-                            CHR, chr, c, C 表示颜值
+                            CHR, chr, c, C 表示运气
                             INT, int, i, I 表示智力
                             STR, str, s, S 表示体质
                             MNY, mny, m, M 表示家境
@@ -608,7 +608,7 @@ class App {
         let description, list, check
         switch (this.#step) {
             case this.Steps.TALENT:
-                description = '🎉 请选择（\x1B[4m/select\x1B[24m）3 个天赋'
+                description = '🎉 请选择（\x1B[4m/select\x1B[24m）5 个天赋'
                 list = this.#randomTalents
                 check = talent => this.#talentSelected.has(talent)
                 break
@@ -641,8 +641,8 @@ class App {
             `${a}\n${this.style('warn', this.style('warn', b))}`
         switch (this.#step) {
             case this.Steps.TALENT:
-                if (this.#talentSelected.size != 3)
-                    return warn(this.list(), `请选择 3 个天赋`)
+                if (this.#talentSelected.size != 5)
+                    return warn(this.list(), `请选择 5 个天赋`)
                 this.#step = this.Steps.PROPERTY
                 this.#life.remake(
                     Array.from(this.#talentSelected).map(({ id }) => id)
@@ -710,7 +710,7 @@ class App {
 剩余点数 ${this.less()}
 
 属性(TAG)       当前值
-颜值(CHR)         ${CHR}
+运气(CHR)         ${CHR}
 智力(INT)         ${INT}
 体质(STR)         ${STR}
 家境(MNY)         ${MNY}
@@ -740,7 +740,7 @@ class App {
         return `当前属性
 
 属性(TAG)       当前值
-颜值(CHR)         ${property.CHR}
+运气(CHR)         ${property.CHR}
 智力(INT)         ${property.INT}
 体质(STR)         ${property.STR}
 家境(MNY)         ${property.MNY}
@@ -853,7 +853,7 @@ class App {
 
         return [
             '🎉 总评',
-            format('颜值', this.#life.PropertyTypes.HCHR),
+            format('运气', this.#life.PropertyTypes.HCHR),
             format('智力', this.#life.PropertyTypes.HINT),
             format('体质', this.#life.PropertyTypes.HSTR),
             format('家境', this.#life.PropertyTypes.HMNY),

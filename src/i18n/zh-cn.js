@@ -12,7 +12,7 @@ export default ({
     UI_Close: '关闭',
     UI_Open: '打开',
     UI_Search: '搜索',
-    UI_Loading: '加载中...',
+    UI_Loading: '少女祈祷nia',
     UI_Error: '错误',
 
     UI_BackupBtn: '上面没有效果就试试这个吧',
@@ -21,14 +21,14 @@ export default ({
     UI_Times: '次',
     UI_Count: '个',
 
-    UI_Property_Charm: '颜值',
+    UI_Property_Charm: '运气',
     UI_Property_Intelligence: '智力',
     UI_Property_Strength: '体质',
     UI_Property_Money: '家境',
     UI_Property_Spirit: '快乐',
 
-    UI_Title_Remake: '人生重开模拟器',
-    UI_Title_Subsequent: '这垃圾人生一秒也不想待了',
+    UI_Title_Remake: '月计版人生重开模拟器',
+    UI_Title_Subsequent: '这垃圾的都市人生一秒也不想待了',
     UI_Remake: '↻立即重开',
     UI_Thanks: '感谢',
     UI_Achievement: '成就',
@@ -36,8 +36,8 @@ export default ({
     UI_Banner: '作者的新作《纸上谈亲》已上线小程序\n微信/抖音搜索“纸上谈亲”即可游玩～',
 
     UI_Title_Talent: '天赋抽卡',
-    UI_Talent_Draw: '10连抽！',
-    UI_Talent_Select_Uncomplete: '请选取 3 个天赋',
+    UI_Talent_Draw: '20连抽！',
+    UI_Talent_Select_Uncomplete: '请选取 5 个天赋',
 
     UI_Title_Property: '调整初始属性',
     UI_Left_Property_Point: '剩余属性点',
@@ -74,26 +74,26 @@ export default ({
     UI_Judge_Level_6: '逆天',
     UI_Judge_Level_7: '传说',
 
-    UI_Spirit_Judge_Level_0: '地狱',
+    UI_Spirit_Judge_Level_0: '扭曲',
     UI_Spirit_Judge_Level_1: '折磨',
     UI_Spirit_Judge_Level_2: '不幸',
     UI_Spirit_Judge_Level_3: '普通',
     UI_Spirit_Judge_Level_4: '幸福',
-    UI_Spirit_Judge_Level_5: '极乐',
+    UI_Spirit_Judge_Level_5: '神备',
     UI_Spirit_Judge_Level_6: '天命',
 
     UI_AGE_Judge_Level_0: '胎死腹中',
     UI_AGE_Judge_Level_1: '早夭',
     UI_AGE_Judge_Level_2: '少年',
-    UI_AGE_Judge_Level_3: '盛年',
-    UI_AGE_Judge_Level_4: '中年',
+    UI_AGE_Judge_Level_3: '而立',
+    UI_AGE_Judge_Level_4: '不惑',
     UI_AGE_Judge_Level_5: '花甲',
     UI_AGE_Judge_Level_6: '古稀',
     UI_AGE_Judge_Level_7: '杖朝',
     UI_AGE_Judge_Level_8: '南山',
-    UI_AGE_Judge_Level_9: '不老',
-    UI_AGE_Judge_Level_10: '修仙',
-    UI_AGE_Judge_Level_11: '仙寿',
+    UI_AGE_Judge_Level_9: '血魔',
+    UI_AGE_Judge_Level_10: '血魔',
+    UI_AGE_Judge_Level_11: '鸿圆的仙人',
 
     UI_Intelligence_Judge_Level_7: '识海',
     UI_Intelligence_Judge_Level_8: '元神',
@@ -119,8 +119,8 @@ export default ({
     UI_Achievement_Count_Judge_Level_4: '抽到橙色概率五倍',
     UI_Achievement_Count_Judge_Level_5: '抽到橙色概率六倍',
 
-    UI_Support_Programmer: '打赏程序(顿顿饭)',
-    UI_Support_Designer: '打赏策划(爱发电)',
+    UI_Support_Programmer: '关注呆桶',
+    UI_Support_Designer: '关注小说！',
 
     UI_Save: '存档',
     UI_Load: '读档',
@@ -140,7 +140,7 @@ export default ({
 
     UI_Title_Celebrity: '你的前世是...',
     UI_CustomMode: '经典模式',
-    UI_CustomModeDescription: '10连抽天赋\n自由分配属性',
+    UI_CustomModeDescription: '20连抽天赋\n自由分配属性',
     UI_CelebrityMode: '名人模式',
     UI_CelebrityModeDescription: '前世是古代名人\n重开到了现代',
     UI_AllNot: '↻都不是',
@@ -161,5 +161,5 @@ export default ({
     F_TalentSelectNotComplect: '要选满{0}个天赋',
     F_PropertyPointLeft: '你还有 {0} 属性点没有分配完',
     F_TalentReplace: '天赋替换【{source.name}】->【{target.name}】',
-    F_PropertyStr: '颜值{CHR} 智力{INT} 体质{STR} 家境{MNY}'
+    F_PropertyStr: '运气{CHR} 智力{INT} 体质{STR} 家境{MNY}'
 });
