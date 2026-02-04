@@ -1,6 +1,6 @@
 /** @type {import('vite').UserConfig} */
 export default {
-    base: './',
+    base: '/PM-life-restart/',
     build: {
         outDir: 'template/public',
     },
