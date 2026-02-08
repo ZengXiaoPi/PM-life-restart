@@ -41,7 +41,7 @@ class Talent {
 
     config({
         talentPullCount = 15, // number of talents to pull from the talent pool
-        talentRate = { 1:100, 2:10, 3:1, total: 1000 }, // rate of talent pull
+        talentRate = { 1:100, 2:10, 3:2, total: 1000 }, // rate of talent pull
         additions = {}, // additional additions
     } = {}) {
         this.#talentPullCount = talentPullCount;
