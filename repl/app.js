@@ -610,7 +610,7 @@ class App {
         let description, list, check
         switch (this.#step) {
             case this.Steps.TALENT:
-                description = '🎉 请选择（\x1B[4m/select\x1B[24m）5 个天赋'
+                description = '🎉 请选择（\x1B[4m/select\x1B[24m）4 个天赋'
                 list = this.#randomTalents
                 check = talent => this.#talentSelected.has(talent)
                 break
