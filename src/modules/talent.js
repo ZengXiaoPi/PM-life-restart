@@ -94,7 +94,7 @@ class Talent {
 
     getRate(additionValues = {}) {
         const rate = this.#system.clone(this.#talentRate);
-        const addition = { 1:1, 2:1, 3:1, 4:1, };
+        const addition = { 1:1, 2:1, 3:1, 4:10000, };
 
         Object.keys(additionValues).forEach(key => {
             const addi = this.getAddition(key, additionValues[key])
