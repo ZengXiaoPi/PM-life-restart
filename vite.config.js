@@ -10,10 +10,20 @@ export default {
     {
       name: 'update-base-href',
       transformIndexHtml(html) {
-        return html.replace(
+        let result = html.replace(
           /<base href="[^"]*"/,
           `<base href="${basePath}"`
         );
+        
+        // For GitHub Pages deployment, also update script src paths to be absolute
+        if (basePath !== '/') {
+          result = result.replace(
+            /src="(libs\/[^"]+)"/g,
+            `src="${basePath}$1"`
+          );
+        }
+        
+        return result;
       },
     },
   ],
